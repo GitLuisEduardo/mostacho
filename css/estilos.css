@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.entero{
+
+}
+
+.circulo, .circulo2{
+	background: #000; 
+	border-radius: 50%; 
+	height: 100px; 
+	width: 100px;
+	position: relative;
+	float: left;
+	left: 150px;
+	top: 40px;
+
+}
+
+
+.circulo2{
+	margin-left: -20px;
+}
+
+.triangulo {
+	position: relative;
+	width: 121px;
+	height: 60px;
+	border-bottom: solid 99px;
+	border-radius: 0 0 0 100%;
+	transform-origin:100% 90% 0;
+	left: 98px;
+	top: 135px;
+	transform: rotate(-40deg);
+	animation: rotar_izquierda 1s infinite;
+}
+
+.triangulo2 {
+	position: relative;
+	width: 120px;
+	height: 60px;
+	border-bottom: solid 99px;
+	border-radius: 0 0 100% 0;
+	transform-origin:0 70% 0;
+	left: 282px;
+	top: -17px;
+	transform: rotate(40deg);
+	animation: rotar_derecha 1.01s infinite;
+} 
+
+
+
+@keyframes rotar_izquierda {
+	0%{
+		transform: rotate(-50deg);
+	}
+
+	50%{
+	 	transform: rotate(-30deg);
+	}
+
+
+
+	100%{
+		transform: rotate(-50deg);
+	}
+}
+
+@keyframes rotar_derecha {
+	0%{
+		transform: rotate(50deg);
+	}
+
+	50%{
+		transform: rotate(30deg);
+	}
+
+
+	100%{
+		transform: rotate(50deg);
+	}
+}
+
+
+.nariz {
+	position: absolute;
+	width: 23%;
+	height: 24%;
+	background-color: #FFC492;
+	border-radius: 59% / 59%;
+	top: 88px;
+	left: 120px;
+
+
+
+}
